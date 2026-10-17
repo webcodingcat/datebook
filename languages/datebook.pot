@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Datebook 0.1.0\n"
+"X-Domain: datebook\n"
+
+#. Name of the plugin
+#: datebook.php
+msgid "Datebook"
+msgstr ""
+
+#. Description of the plugin
+#: datebook.php
+msgid "Upcoming events with venues and a map that loads only on request."
+msgstr ""
+
+#: src/Block/Events/Events.php
+msgid "Upcoming events"
+msgstr ""
+
+#: src/Block/Events/Events.php
+msgid "The next events; past events drop out by themselves."
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Events/Events.php
+msgid "dates"
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Events/Events.php
+msgid "calendar"
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Events/Events.php
+msgid "agenda"
+msgstr ""
+
+#: src/Block/Events/Events.php
+msgid "Number of events"
+msgstr ""
+
+#: src/Block/Map/Map.php
+msgid "Map"
+msgstr ""
+
+#: src/Block/Map/Map.php
+msgid "The map of a venue, loaded only on request."
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Map/Map.php
+msgid "directions"
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Map/Map.php
+msgid "venue"
+msgstr ""
+
+#. Search keyword of a block
+#: src/Block/Map/Map.php
+msgid "openstreetmap"
+msgstr ""
+
+#: src/Block/Map/Map.php
+#: src/Post/Venue.php
+#: src/Post/EventDetails.php
+msgid "Venue"
+msgstr ""
+
+#: src/Block/Map/Map.php
+msgid "Zoom (1–19)"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Events"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Add New Event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Add an event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Edit Event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "New Event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "View Event"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "View Events"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Search Events"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "No events found."
+msgstr ""
+
+#: src/Post/Event.php
+msgid "No events found in Trash."
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Parent Event:"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "All Events"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Event Archives"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Event Attributes"
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Event published."
+msgstr ""
+
+#: src/Post/Event.php
+msgid "Event updated."
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Venues"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Add New Venue"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Add a venue"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Edit Venue"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "New Venue"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "View Venue"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "View Venues"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Search Venues"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "No venues found."
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "No venues found in Trash."
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Parent Venue:"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "All Venues"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Venue Archives"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Venue Attributes"
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Venue published."
+msgstr ""
+
+#: src/Post/Venue.php
+msgid "Venue updated."
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "Event details"
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "Start"
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "End"
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "Description"
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "Image"
+msgstr ""
+
+#: src/Post/EventDetails.php
+msgid "Link (tickets, more information)"
+msgstr ""
+
+#: src/Post/VenuePlace.php
+msgid "Place"
+msgstr ""
+
+#: src/Post/VenuePlace.php
+msgid "Address"
+msgstr ""
+
+#: src/Post/VenuePlace.php
+msgid "Latitude"
+msgstr ""
+
+#: src/Post/VenuePlace.php
+msgid "Longitude"
+msgstr ""
+
+#: src/Block/Events/Events.twig:30
+msgid "More information"
+msgstr ""
+
+#: src/Block/Events/Events.twig:44
+msgid "No upcoming events."
+msgstr ""
+
+#: src/Block/Map/Map.twig:5
+msgid "Choose a venue with coordinates in the block settings."
+msgstr ""
+
+#: src/Block/Map/MapCanvas.twig:5
+msgid "Map data © OpenStreetMap contributors"
+msgstr ""
+
+#: src/Block/Map/MapCanvas.twig:8
+msgid "The map is loaded from OpenStreetMap. Your browser then sends your IP address to its servers."
+msgstr ""
+
+#: src/Block/Map/MapCanvas.twig:9
+msgid "Load map"
+msgstr ""
+
+#: src/Block/Map/MapCanvas.twig:12
+msgid "Plan route"
+msgstr ""
+
+#. translators: %s: the error
+#: src/Geocoding/Nominatim.php:32
+msgid "The address could not be looked up: %s"
+msgstr ""
+
+#. translators: %d: HTTP status
+#: src/Geocoding/Nominatim.php:36
+msgid "The address could not be looked up: OpenStreetMap answered with status %d."
+msgstr ""
+
+#. translators: %s: the address
+#: src/Geocoding/Nominatim.php:43
+msgid "OpenStreetMap found no place for the address \"%s\"."
+msgstr ""
+
+#: src/Geocoding/VenueGeocoding.php:64
+msgid "Enter the coordinates by hand, or correct the address and save again."
+msgstr ""

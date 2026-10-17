@@ -37,7 +37,7 @@ This file records the decisions and the steps. Tick a step when its commits are 
 ### Output
 
 - Blocks: "Upcoming events" (number of events; past events drop out: an event is past when its end, or else its start, lies before now; an evening that ends before 6 in the morning shows only the end time) and "Map" (one venue, a post object attribute `?Venue`: a `#[PostReference]` would not resolve the data type, which is not viewable).
-- Texts of the front end are translated in PHP (`Output\Labels`) and passed to the templates, until the framework translates in Twig.
+- Texts are English in the code and translated with the text domain `datebook`: attributes by the framework, templates with `__()`, PHP with WordPress' functions. `vendor/bin/wp-app-framework pot` writes `languages/datebook.pot`; `languages/datebook-de_DE.po` is the German translation (neutral "Veranstaltung"; a site names its section as it likes).
 - schema.org `Event` as JSON-LD for the events of the list.
 - Neutral markup with prefixed Tailwind classes; themes adapt it with overrides of the Twig templates.
 
@@ -48,7 +48,7 @@ Each step is one or two commits; lint and build before each commit.
 1. [x] Project from wp-app-starter (plugin, code checks, release workflow, browser tests); this plan.
 2. [x] Post types Event and Venue with their meta; geocoding of venues with Nominatim; test plugin `tests/fake-nominatim`; browser tests.
 3. [x] Blocks "Upcoming events" and "Map" (Leaflet, click to load), JSON-LD, browser tests.
-4. [ ] Translations: the texts of the plugin translatable (needs the framework's support for translatable labels), German translation (`languages/datebook-de_DE`).
+4. [x] Translations: the texts of the plugin translatable (framework 0.19), German translation (`languages/datebook-de_DE.po`).
 5. [ ] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
 
 ## Dependencies

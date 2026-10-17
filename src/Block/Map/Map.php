@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Saij\Datebook\Block\Map;
 
-use Saij\Datebook\Output\Labels;
 use Saij\Datebook\Output\MapView;
 use Saij\WpAppFramework\Block\Block;
 use Saij\WpAppFramework\Block\BlockCategory;
@@ -20,14 +19,12 @@ final readonly class Map
     public function __construct(
         private TemplateRenderer $renderer,
         private MapView $maps,
-        private Labels $labels,
     ) {}
 
     public function render(MapAttributes $attrs): string
     {
         return $this->renderer->render('Block/Map/Map.twig', [
             'map' => $attrs->venue === null ? null : $this->maps->of($attrs->venue, $attrs->zoom),
-            'labels' => $this->labels->all(),
         ]);
     }
 }

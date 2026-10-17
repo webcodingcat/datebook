@@ -27,10 +27,10 @@
                                 <p class="datebook-event__venue datebook:m-0"><strong>{{ item.venue.name }}</strong>{% if item.venue.address %}<br>{{ item.venue.address|nl2br }}{% endif %}</p>
                             {% endif %}
                             {% if item.link.url %}
-                                <p class="datebook:m-0"><a class="datebook-event__link" {{ link_attributes(item.link) }}>{{ labels.more }}</a></p>
+                                <p class="datebook:m-0"><a class="datebook-event__link" {{ link_attributes(item.link) }}>{{ __('More information') }}</a></p>
                             {% endif %}
                             {% if item.map %}
-                                {% include 'Block/Map/MapCanvas.twig' with {map: item.map, labels: labels} only %}
+                                {% include 'Block/Map/MapCanvas.twig' with {map: item.map} only %}
                             {% endif %}
                         </div>
                     </details>
@@ -41,6 +41,6 @@
             <script type="application/ld+json">{{ jsonLd|raw }}</script>
         {% endif %}
     {% else %}
-        <p class="datebook-events__empty datebook:m-0">{{ labels.empty }}</p>
+        <p class="datebook-events__empty datebook:m-0">{{ __('No upcoming events.') }}</p>
     {% endif %}
 </section>

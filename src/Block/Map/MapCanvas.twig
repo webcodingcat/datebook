@@ -2,12 +2,12 @@
  # The map of a venue: until a click on "Load map", a placeholder with a notice; then the view script draws the map
  # with Leaflet and the tiles of OpenStreetMap. The link for directions works without the map.
  #}
-<div class="datebook-map datebook:flex datebook:flex-col datebook:gap-2" data-datebook-map data-lat="{{ map.lat }}" data-lng="{{ map.lng }}" data-zoom="{{ map.zoom }}" data-name="{{ map.name }}" data-attribution="{{ labels.attribution }}">
+<div class="datebook-map datebook:flex datebook:flex-col datebook:gap-2" data-datebook-map data-lat="{{ map.lat }}" data-lng="{{ map.lng }}" data-zoom="{{ map.zoom }}" data-name="{{ map.name }}" data-attribution="{{ __('Map data © OpenStreetMap contributors') }}">
     <div class="datebook-map__frame datebook:relative datebook:aspect-video datebook:w-full datebook:overflow-hidden datebook:rounded-md datebook:bg-current/5">
         <div class="datebook-map__consent datebook:absolute datebook:inset-0 datebook:flex datebook:flex-col datebook:items-center datebook:justify-center datebook:gap-3 datebook:p-4 datebook:text-center">
-            <p class="datebook:m-0 datebook:max-w-md datebook:text-sm">{{ labels.consent }}</p>
-            <button type="button" class="datebook-map__load datebook:cursor-pointer datebook:rounded-md datebook:border datebook:border-current datebook:bg-transparent datebook:px-4 datebook:py-2 datebook:font-semibold datebook:text-current">{{ labels.load }}</button>
+            <p class="datebook:m-0 datebook:max-w-md datebook:text-sm">{{ __('The map is loaded from OpenStreetMap. Your browser then sends your IP address to its servers.') }}</p>
+            <button type="button" class="datebook-map__load datebook:cursor-pointer datebook:rounded-md datebook:border datebook:border-current datebook:bg-transparent datebook:px-4 datebook:py-2 datebook:font-semibold datebook:text-current">{{ __('Load map') }}</button>
         </div>
     </div>
-    <a class="datebook-map__route datebook:self-start datebook:text-sm" href="{{ map.route }}" target="_blank" rel="noopener noreferrer">{{ labels.route }}</a>
+    <a class="datebook-map__route datebook:self-start datebook:text-sm" href="{{ map.route }}" target="_blank" rel="noopener noreferrer">{{ __('Plan route') }}</a>
 </div>
