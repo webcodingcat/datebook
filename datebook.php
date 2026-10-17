@@ -5,7 +5,7 @@
  * Description: Upcoming events with venues and a map that loads only on request.
  * Author: Web Coding Cat
  * Author URI: https://webcodingcat.de
- * Version: 0.1.0
+ * Version: 0.2.0
  * Requires at least: 7.1
  * Requires PHP: 8.5
  * License: GPL-2.0-or-later
