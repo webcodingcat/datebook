@@ -47,7 +47,8 @@ Each step is one or two commits; lint and build before each commit.
 1. [x] Project from wp-app-starter (plugin, code checks, release workflow, browser tests); this plan.
 2. [x] Post types Event and Venue with their meta; geocoding of venues with Nominatim; test plugin `tests/fake-nominatim`; browser tests.
 3. [ ] Blocks "Upcoming events" and "Map" (Leaflet, click to load), JSON-LD, browser tests.
-4. [ ] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
+4. [ ] Translations: the texts of the plugin translatable (needs the framework's support for translatable labels), German translation (`languages/datebook-de_DE`).
+5. [ ] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
 
 ## Dependencies
 
