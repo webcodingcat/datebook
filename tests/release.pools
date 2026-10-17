@@ -1,0 +1,15 @@
+# Test pools of the release ZIP, for bin/run of wp-test-env
+# (https://github.com/saijsaij/wp-test-env), e.g.
+#
+#   bin/run ../datebook/tests/release.pools
+#
+# Builds the release ZIP (composer release needs a Git repository) and installs the
+# newest ZIP of dist/.
+# The plugin runs on the default theme of WordPress.
+prepare datebook
+tools datebook composer release
+
+pool datebook-release
+instances 2
+plugin-zip datebook/dist/datebook-*.zip
+e2e datebook

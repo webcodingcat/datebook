@@ -1,0 +1,11 @@
+/*
+ * Stylesheet, compiled with Tailwind CSS by the framework's webpack helper into
+ * build/styles.css and loaded on the front end and in the editor canvas.
+ * Class names are global: the prefix datebook keeps them apart from the theme's
+ * (write them as datebook:p-4).
+ */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(datebook);
+@import "tailwindcss/utilities.css" layer(utilities) source(none) prefix(datebook);
+
+@source "../src/**/*.twig";

@@ -1,0 +1,63 @@
+{
+    "name": "saij/datebook",
+    "description": "Upcoming events with venues and a map that loads only on request.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Saij"
+        }
+    ],
+    "require": {
+        "php": ">=8.5",
+        "saij/wp-app-framework": "^0.18"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "php-stubs/wordpress-stubs": "^7.1",
+        "phpstan/phpstan": "^2.3",
+        "szepeviktor/phpstan-wordpress": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saij\\Datebook\\": "src/"
+        }
+    },
+    "scripts": {
+        "build-manifest": "wp-app-framework build",
+        "lint": [
+            "phpstan analyse --no-progress --memory-limit=1G",
+            "php-cs-fixer check --diff"
+        ],
+        "fix": "php-cs-fixer fix",
+        "release": "wp-app-framework release"
+    },
+    "scripts-descriptions": {
+        "build-manifest": "Builds and checks the manifest (writes nothing).",
+        "lint": "PHPStan and PHP-CS-Fixer.",
+        "fix": "Fixes the code style.",
+        "release": "Builds the release ZIP into dist/."
+    },
+    "extra": {
+        "wp-app-framework": {
+            "namespace": "datebook"
+        },
+        "strauss": {
+            "target_directory": "vendor-prefixed",
+            "namespace_prefix": "Saij\\Datebook\\Vendor\\",
+            "classmap_prefix": "Saij_Datebook_Vendor_",
+            "include_root_autoload": true,
+            "update_call_sites": [
+                "src",
+                "datebook.php"
+            ],
+            "delete_vendor_packages": false
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.5"
+        },
+        "sort-packages": true
+    }
+}
