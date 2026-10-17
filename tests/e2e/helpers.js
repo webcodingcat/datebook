@@ -25,6 +25,24 @@ async function create( requestUtils, type, data ) {
 }
 
 /**
+ * Creates a published page with blocks; cleanUp() deletes it.
+ *
+ * @param {Object} requestUtils
+ * @param {string} title
+ * @param {string} content      Serialized blocks.
+ * @return {Promise<string>} The URL of the page.
+ */
+async function createPage( requestUtils, title, content ) {
+	const page = await requestUtils.rest( {
+		method: 'POST',
+		path: '/wp/v2/pages',
+		data: { title, content, status: 'publish' },
+	} );
+	created.push( [ 'pages', page.id ] );
+	return page.link;
+}
+
+/**
  * Updates a post of a post type of the plugin.
  *
  * @param {Object} requestUtils
@@ -90,6 +108,7 @@ module.exports = {
 	cleanUp,
 	clearGeocodingRequests,
 	create,
+	createPage,
 	geocodingRequests,
 	update,
 };

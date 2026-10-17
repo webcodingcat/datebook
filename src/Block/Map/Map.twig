@@ -1,0 +1,7 @@
+<div {{ block_wrapper_attributes({class: 'datebook-map-block'}) }}>
+    {% if map %}
+        {% include 'Block/Map/MapCanvas.twig' with {map: map, labels: labels} only %}
+    {% elseif is_editor() %}
+        <p class="datebook:m-0 datebook:rounded-md datebook:border datebook:border-dashed datebook:border-current/40 datebook:p-6 datebook:text-center">{{ labels.chooseVenue }}</p>
+    {% endif %}
+</div>

@@ -31,12 +31,13 @@ This file records the decisions and the steps. Tick a step when its commits are 
 
 ### Map
 
-- Leaflet, self-hosted (no CDN). OpenStreetMap tiles load only after a click on "Load map"; until then a placeholder with the address and a link "Plan route" (OpenStreetMap directions to the coordinates) shows.
+- Leaflet, bundled in the shared module `assets/shared/map.js` (no CDN; loaded once per page by the views of both blocks), its stylesheet imported into `assets/styles.css`. OpenStreetMap tiles load only after a click on "Load map"; until then a placeholder with a notice shows, and a link "Plan route" (OpenStreetMap directions to the coordinates) works without the map. The pin takes the color of `--datebook-marker`, which a theme sets.
 - The privacy policy of a site that uses the map names the tile server (OpenStreetMap Foundation) and that it loads only after the click.
 
 ### Output
 
-- Blocks: "Upcoming events" (number of events; past events drop out: an event is past when its end, or else its start, lies before now) and "Map" (one chosen venue).
+- Blocks: "Upcoming events" (number of events; past events drop out: an event is past when its end, or else its start, lies before now; an evening that ends before 6 in the morning shows only the end time) and "Map" (one venue, a post object attribute `?Venue`: a `#[PostReference]` would not resolve the data type, which is not viewable).
+- Texts of the front end are translated in PHP (`Output\Labels`) and passed to the templates, until the framework translates in Twig.
 - schema.org `Event` as JSON-LD for the events of the list.
 - Neutral markup with prefixed Tailwind classes; themes adapt it with overrides of the Twig templates.
 
@@ -46,7 +47,7 @@ Each step is one or two commits; lint and build before each commit.
 
 1. [x] Project from wp-app-starter (plugin, code checks, release workflow, browser tests); this plan.
 2. [x] Post types Event and Venue with their meta; geocoding of venues with Nominatim; test plugin `tests/fake-nominatim`; browser tests.
-3. [ ] Blocks "Upcoming events" and "Map" (Leaflet, click to load), JSON-LD, browser tests.
+3. [x] Blocks "Upcoming events" and "Map" (Leaflet, click to load), JSON-LD, browser tests.
 4. [ ] Translations: the texts of the plugin translatable (needs the framework's support for translatable labels), German translation (`languages/datebook-de_DE`).
 5. [ ] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
 

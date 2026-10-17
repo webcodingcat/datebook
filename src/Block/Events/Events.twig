@@ -1,0 +1,46 @@
+<section {{ block_wrapper_attributes({class: 'datebook-events'}) }}>
+    {% if items %}
+        <ol class="datebook-events__list datebook:m-0 datebook:list-none datebook:divide-y datebook:divide-current/15 datebook:p-0">
+            {% for item in items %}
+                <li class="datebook-event">
+                    <details class="datebook:group">
+                        <summary class="datebook-event__summary datebook:flex datebook:cursor-pointer datebook:list-none datebook:items-center datebook:gap-4 datebook:py-4 datebook:[&::-webkit-details-marker]:hidden">
+                            <time class="datebook-event__date datebook:flex datebook:w-16 datebook:shrink-0 datebook:flex-col datebook:items-center datebook:rounded-md datebook:border datebook:border-current/25 datebook:py-1.5 datebook:leading-tight" datetime="{{ item.startIso }}">
+                                <span class="datebook-event__weekday datebook:text-xs datebook:uppercase">{{ item.weekday }}</span>
+                                <span class="datebook-event__day datebook:text-2xl datebook:font-bold">{{ item.day }}</span>
+                                <span class="datebook-event__month datebook:text-xs datebook:uppercase">{{ item.month }}</span>
+                            </time>
+                            <span class="datebook:flex datebook:min-w-0 datebook:flex-col datebook:gap-0.5">
+                                <span class="datebook-event__title datebook:text-lg datebook:font-semibold">{{ item.title }}</span>
+                                <span class="datebook-event__meta datebook:text-sm datebook:opacity-75">{{ item.when }}{% if item.venue %} · {{ item.venue.name }}{% endif %}</span>
+                            </span>
+                            <span class="datebook-event__toggle datebook:ms-auto datebook:text-2xl datebook:leading-none datebook:transition-transform datebook:group-open:rotate-45" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="datebook-event__details datebook:flex datebook:flex-col datebook:gap-4 datebook:pb-6 datebook:sm:ps-20">
+                            {% if item.imageId %}
+                                {{ wp_attachment_image(item.imageId, 'medium_large', {class: 'datebook-event__image datebook:h-auto datebook:max-w-full datebook:rounded-md'}) }}
+                            {% endif %}
+                            {% if item.description %}
+                                <div class="datebook-event__description">{{ item.description|raw }}</div>
+                            {% endif %}
+                            {% if item.venue %}
+                                <p class="datebook-event__venue datebook:m-0"><strong>{{ item.venue.name }}</strong>{% if item.venue.address %}<br>{{ item.venue.address|nl2br }}{% endif %}</p>
+                            {% endif %}
+                            {% if item.link.url %}
+                                <p class="datebook:m-0"><a class="datebook-event__link" {{ link_attributes(item.link) }}>{{ labels.more }}</a></p>
+                            {% endif %}
+                            {% if item.map %}
+                                {% include 'Block/Map/MapCanvas.twig' with {map: item.map, labels: labels} only %}
+                            {% endif %}
+                        </div>
+                    </details>
+                </li>
+            {% endfor %}
+        </ol>
+        {% if not is_editor() %}
+            <script type="application/ld+json">{{ jsonLd|raw }}</script>
+        {% endif %}
+    {% else %}
+        <p class="datebook-events__empty datebook:m-0">{{ labels.empty }}</p>
+    {% endif %}
+</section>
