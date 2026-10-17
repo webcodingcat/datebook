@@ -1,6 +1,6 @@
 # Plan – Datebook
 
-Datebook is a WordPress plugin for upcoming events: events with a start, an end, a venue and a description, shown as a list that drops past events, and a map to a venue that loads only on request. Built with [wp-app-framework](https://github.com/saijsaij/wp-app-framework). Goals: generic (any theme, any client), GDPR-friendly, easy to edit.
+Datebook is a WordPress plugin for upcoming events: events with a start, an end, a venue and a description, shown as a list that drops past events, and a map to a venue that loads only on request. Built with [wp-app-framework](https://github.com/webcodingcat/wp-app-framework). Goals: generic (any theme, any client), GDPR-friendly, easy to edit.
 
 This file records the decisions and the steps. Tick a step when its commits are in; change a decision only together with the code.
 
@@ -54,4 +54,4 @@ Each step is one or two commits; lint and build before each commit.
 ## Dependencies
 
 - wp-app-framework with `#[DateTime]` (`main`, released with 0.19).
-- Repository: https://github.com/saijsaij/datebook
+- Repository: https://github.com/webcodingcat/datebook

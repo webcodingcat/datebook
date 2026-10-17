@@ -1,7 +1,7 @@
 # Release for a tag v<version> (= Version in datebook.php): builds the ZIP with
 # the release workflow of wp-app-framework, tests it in a plain WordPress and
 # attaches it to the GitHub release of the tag
-# (https://saijsaij.github.io/wp-app-framework/next/build-and-release/ci.html).
+# (https://webcodingcat.github.io/wp-app-framework/next/build-and-release/ci.html).
 # The release test runs the plugin on the default theme of WordPress; name a theme
 # release with with-theme if the tests depend on a theme.
 name: Release
@@ -16,4 +16,4 @@ permissions:
 jobs:
   release:
     # Keep the ref at the framework version the lock file installs.
-    uses: SaijSaij/wp-app-framework/.github/workflows/consumer-release.yml@v0.19.0
+    uses: webcodingcat/wp-app-framework/.github/workflows/consumer-release.yml@v0.19.0
