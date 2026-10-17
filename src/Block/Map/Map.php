@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Block\Map;
+namespace WebCodingCat\Datebook\Block\Map;
 
-use Saij\Datebook\Output\MapView;
-use Saij\WpAppFramework\Block\Block;
-use Saij\WpAppFramework\Block\BlockCategory;
-use Saij\WpAppFramework\Twig\TemplateRenderer;
+use WebCodingCat\Datebook\Output\MapView;
+use WebCodingCat\WpAppFramework\Block\Block;
+use WebCodingCat\WpAppFramework\Block\BlockCategory;
+use WebCodingCat\WpAppFramework\Twig\TemplateRenderer;
 
 /**
  * The map of a venue, e.g. the place of a weekly training. The map tiles load from OpenStreetMap only after a click;

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Post;
+namespace WebCodingCat\Datebook\Post;
 
-use Saij\WpAppFramework\Query\Field\PostField;
-use Saij\WpAppFramework\Query\Field\StringField;
-use Saij\WpAppFramework\Query\MetaFields;
+use WebCodingCat\WpAppFramework\Query\Field\PostField;
+use WebCodingCat\WpAppFramework\Query\Field\StringField;
+use WebCodingCat\WpAppFramework\Query\MetaFields;
 
 /**
  * The fields of EventDetails for queries: start and end compare as text (local time `Y-m-d\TH:i`).

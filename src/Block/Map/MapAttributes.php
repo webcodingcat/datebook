@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Block\Map;
+namespace WebCodingCat\Datebook\Block\Map;
 
-use Saij\Datebook\Post\Venue;
-use Saij\WpAppFramework\Value\Label;
+use WebCodingCat\Datebook\Post\Venue;
+use WebCodingCat\WpAppFramework\Value\Label;
 
 final readonly class MapAttributes
 {

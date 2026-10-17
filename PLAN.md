@@ -49,9 +49,10 @@ Each step is one or two commits; lint and build before each commit.
 2. [x] Post types Event and Venue with their meta; geocoding of venues with Nominatim; test plugin `tests/fake-nominatim`; browser tests.
 3. [x] Blocks "Upcoming events" and "Map" (Leaflet, click to load), JSON-LD, browser tests.
 4. [x] Translations: the texts of the plugin translatable (framework 0.19), German translation (`languages/datebook-de_DE.po`).
-5. [ ] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
+5. [x] Release 0.1.0 (after framework 0.19 with `#[DateTime]`).
+6. [x] Web Coding Cat (release 0.2.0): the repository moved to the organization webcodingcat; package `webcodingcat/datebook`, PHP namespace `WebCodingCat\Datebook`, framework 0.20 (`webcodingcat/wp-app-framework`). Post types, blocks and options keep their names (`datebook_…`, `datebook/…`).
 
 ## Dependencies
 
-- wp-app-framework with `#[DateTime]` (`main`, released with 0.19).
+- wp-app-framework 0.20 (`webcodingcat/wp-app-framework`, `^0.20`; `#[DateTime]` since 0.19).
 - Repository: https://github.com/webcodingcat/datebook

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Block\Events;
+namespace WebCodingCat\Datebook\Block\Events;
 
-use Saij\WpAppFramework\Value\Label;
+use WebCodingCat\WpAppFramework\Value\Label;
 
 final readonly class EventsAttributes
 {

@@ -16,4 +16,4 @@ permissions:
 jobs:
   release:
     # Keep the ref at the framework version the lock file installs.
-    uses: webcodingcat/wp-app-framework/.github/workflows/consumer-release.yml@v0.19.0
+    uses: webcodingcat/wp-app-framework/.github/workflows/consumer-release.yml@v0.20.0

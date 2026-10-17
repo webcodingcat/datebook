@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Post;
+namespace WebCodingCat\Datebook\Post;
 
-use Saij\WpAppFramework\Post\PostMeta;
-use Saij\WpAppFramework\Value\DateTime;
-use Saij\WpAppFramework\Value\Image;
-use Saij\WpAppFramework\Value\Label;
-use Saij\WpAppFramework\Value\Link;
-use Saij\WpAppFramework\Value\RichText;
+use WebCodingCat\WpAppFramework\Post\PostMeta;
+use WebCodingCat\WpAppFramework\Value\DateTime;
+use WebCodingCat\WpAppFramework\Value\Image;
+use WebCodingCat\WpAppFramework\Value\Label;
+use WebCodingCat\WpAppFramework\Value\Link;
+use WebCodingCat\WpAppFramework\Value\RichText;
 
 /**
  * When and where an event takes place, and what it is about. Start and end are the local time of the site.

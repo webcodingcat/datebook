@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Geocoding;
+namespace WebCodingCat\Datebook\Geocoding;
 
 use RuntimeException;
 

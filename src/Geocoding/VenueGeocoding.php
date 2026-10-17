@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Geocoding;
+namespace WebCodingCat\Datebook\Geocoding;
 
-use Saij\Datebook\Post\Venue;
-use Saij\WpAppFramework\Hook\Hook;
+use WebCodingCat\Datebook\Post\Venue;
+use WebCodingCat\WpAppFramework\Hook\Hook;
 use WP_Post;
 
 /**

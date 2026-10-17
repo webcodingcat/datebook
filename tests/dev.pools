@@ -9,7 +9,7 @@
 # tests/fake-nominatim, which answers the geocoding requests; the framework is the
 # checkout next to the project (framework/wp-app-framework in the workspace).
 prepare datebook
-link saij/wp-app-framework=framework/wp-app-framework
+link webcodingcat/wp-app-framework=framework/wp-app-framework
 
 pool datebook
 instances 2

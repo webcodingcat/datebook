@@ -7,7 +7,7 @@ built with [wp-app-framework](https://webcodingcat.github.io/wp-app-framework/):
 
 - Slug (directory name): `datebook`
 - Namespace: `datebook`, the name in front of blocks (`datebook/…`), REST routes, settings options, post types and tables; content refers to it, so keep it.
-- PHP namespace: `Saij\Datebook\` in `src/`
+- PHP namespace: `WebCodingCat\Datebook\` in `src/`
 
 ## Requirements
 

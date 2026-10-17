@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Output;
+namespace WebCodingCat\Datebook\Output;
 
 use DateTimeImmutable;
-use Saij\Datebook\Post\Event;
-use Saij\Datebook\Post\EventDetailsFields;
-use Saij\WpAppFramework\Query\All;
-use Saij\WpAppFramework\Query\Any;
-use Saij\WpAppFramework\Query\PostOrder;
-use Saij\WpAppFramework\Value\DateTime;
-use Saij\WpAppFramework\Value\Link;
+use WebCodingCat\Datebook\Post\Event;
+use WebCodingCat\Datebook\Post\EventDetailsFields;
+use WebCodingCat\WpAppFramework\Query\All;
+use WebCodingCat\WpAppFramework\Query\Any;
+use WebCodingCat\WpAppFramework\Query\PostOrder;
+use WebCodingCat\WpAppFramework\Value\DateTime;
+use WebCodingCat\WpAppFramework\Value\Link;
 
 /**
  * The events that are not over yet – their end, or else their start, lies at or after now – in the order of their

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Post;
+namespace WebCodingCat\Datebook\Post;
 
-use Saij\WpAppFramework\Post\PostMeta;
-use Saij\WpAppFramework\Value\Hidden;
-use Saij\WpAppFramework\Value\Label;
-use Saij\WpAppFramework\Value\PlainText;
+use WebCodingCat\WpAppFramework\Post\PostMeta;
+use WebCodingCat\WpAppFramework\Value\Hidden;
+use WebCodingCat\WpAppFramework\Value\Label;
+use WebCodingCat\WpAppFramework\Value\PlainText;
 
 /**
  * Where a venue is: its address (it may be partial, a town alone) and its coordinates. The coordinates are looked up

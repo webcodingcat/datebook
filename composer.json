@@ -1,16 +1,17 @@
 {
-    "name": "saij/datebook",
+    "name": "webcodingcat/datebook",
     "description": "Upcoming events with venues and a map that loads only on request.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "Saij"
+            "name": "Web Coding Cat",
+            "homepage": "https://webcodingcat.de"
         }
     ],
     "require": {
         "php": ">=8.5",
-        "saij/wp-app-framework": "^0.19"
+        "webcodingcat/wp-app-framework": "^0.20"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.95",
@@ -20,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Saij\\Datebook\\": "src/"
+            "WebCodingCat\\Datebook\\": "src/"
         }
     },
     "scripts": {
@@ -44,8 +45,8 @@
         },
         "strauss": {
             "target_directory": "vendor-prefixed",
-            "namespace_prefix": "Saij\\Datebook\\Vendor\\",
-            "classmap_prefix": "Saij_Datebook_Vendor_",
+            "namespace_prefix": "WebCodingCat\\Datebook\\Vendor\\",
+            "classmap_prefix": "WebCodingCat_Datebook_Vendor_",
             "include_root_autoload": true,
             "update_call_sites": [
                 "src",

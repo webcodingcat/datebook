@@ -14,8 +14,8 @@ const PIN =
 /**
  * Prepares the maps of a view: each draws itself after a click on its button and is removed when the view unmounts.
  *
- * @param {import('@saij/wp-app-framework/view').BlockView} view
- * @param {Element[]}                                       elements Elements with data-datebook-map.
+ * @param {import('@webcodingcat/wp-app-framework/view').BlockView} view
+ * @param {Element[]}                                               elements Elements with data-datebook-map.
  */
 export function mountMaps( view, elements ) {
 	for ( const element of elements ) {

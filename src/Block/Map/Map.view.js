@@ -1,4 +1,4 @@
-import { BlockView } from '@saij/wp-app-framework/view';
+import { BlockView } from '@webcodingcat/wp-app-framework/view';
 
 import { mountMaps } from '#shared/map';
 

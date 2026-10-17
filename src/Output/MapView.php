@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Output;
+namespace WebCodingCat\Datebook\Output;
 
-use Saij\Datebook\Post\Venue;
+use WebCodingCat\Datebook\Post\Venue;
 
 /**
  * The data of a map of a venue for the template Block/Map/MapCanvas.twig, or null for a venue without coordinates.

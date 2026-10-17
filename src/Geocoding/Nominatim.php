@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Saij\Datebook\Geocoding;
+namespace WebCodingCat\Datebook\Geocoding;
 
 /**
  * Looks up addresses with Nominatim, the geocoder of OpenStreetMap, on the server. Its usage policy
