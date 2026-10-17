@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=8.5",
-        "saij/wp-app-framework": "^0.18"
+        "saij/wp-app-framework": "^0.19"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.95",

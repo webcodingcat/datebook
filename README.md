@@ -44,7 +44,7 @@ The release build prefixes the framework and all dependencies, so the ZIP runs i
 
 A tag `v<version>` (equal to that version) runs `.github/workflows/release.yml`: the release workflow of the framework builds the ZIP, tests it in a fresh WordPress and attaches it to the GitHub release of the tag.
 It runs the plugin on the default theme of WordPress.
-Keep the framework version of the workflow (`consumer-release.yml@v0.18.1`) at the one your lock file installs.
+Keep the framework version of the workflow (`consumer-release.yml@v0.19.0`) at the one your lock file installs.
 
 ## Browser tests
 

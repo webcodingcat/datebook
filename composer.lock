@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc7fa92a3378cd0997c22a7ebae2482e",
+    "content-hash": "3c102bceb7a7743ab12747092c8d419b",
     "packages": [
         {
             "name": "saij/wp-app-framework",
-            "version": "v0.18.1",
+            "version": "v0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SaijSaij/wp-app-framework.git",
-                "reference": "6bc5d6a7dcb0d2c5949db64dbd9d75caadefdc01"
+                "reference": "91a1074825b338d0f5d76be2d9b4785cb0ba1a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SaijSaij/wp-app-framework/zipball/6bc5d6a7dcb0d2c5949db64dbd9d75caadefdc01",
-                "reference": "6bc5d6a7dcb0d2c5949db64dbd9d75caadefdc01",
+                "url": "https://api.github.com/repos/SaijSaij/wp-app-framework/zipball/91a1074825b338d0f5d76be2d9b4785cb0ba1a48",
+                "reference": "91a1074825b338d0f5d76be2d9b4785cb0ba1a48",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "issues": "https://github.com/saijsaij/wp-app-framework/issues",
                 "source": "https://github.com/saijsaij/wp-app-framework"
             },
-            "time": "2026-10-17T07:12:58+00:00"
+            "time": "2026-10-17T11:48:17+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
