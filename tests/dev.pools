@@ -5,10 +5,13 @@
 #
 #   bin/run ../datebook/tests/dev.pools
 #
-# The plugin runs on the default theme of WordPress.
+# The plugin runs on the default theme of WordPress, with the test plugin
+# tests/fake-nominatim, which answers the geocoding requests; the framework is the
+# checkout next to the project (framework/wp-app-framework in the workspace).
 prepare datebook
+link saij/wp-app-framework=framework/wp-app-framework
 
 pool datebook
 instances 2
-plugins datebook
+plugins datebook datebook/tests/fake-nominatim
 e2e datebook

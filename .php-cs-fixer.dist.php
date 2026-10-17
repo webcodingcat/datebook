@@ -12,7 +12,7 @@ return new PhpCsFixer\Config()
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()
-            ->in([__DIR__ . '/src'])
+            ->in([__DIR__ . '/src', __DIR__ . '/tests/fake-nominatim'])
             ->append([__DIR__ . '/datebook.php', __FILE__]),
     )
     ->setCacheFile(sys_get_temp_dir() . '/php-cs-fixer-datebook.cache');

@@ -6,3 +6,4 @@ parameters:
     paths:
         - src
         - datebook.php
+        - tests/fake-nominatim
